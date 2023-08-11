@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  tata-deployment
+  labels:
+    name: webpod
+    app: tata
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      name: webpod
+      app: tata
+  template:
+    metadata:
+      name: webpod
+      labels:
+        name: webpod
+        app: tata
+    spec:
+      containers:
+        - name:  tata-images
+          image: 2222s/tata:V-3
+          ports:
+            - containerPort: 8080
