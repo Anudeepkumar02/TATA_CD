@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
         - name:  tata-images
-          image: 2222s/tata:V-3
+          image: 2222s/tata:V-4
           ports:
             - containerPort: 8080
